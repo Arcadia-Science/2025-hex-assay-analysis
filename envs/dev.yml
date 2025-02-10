@@ -16,4 +16,4 @@ dependencies:
   - scikit-learn=1.6.0
   - statsmodels=0.14.2
   - pip:
-      - arcadia_pycolor
+      - arcadia_pycolor==0.5.1
