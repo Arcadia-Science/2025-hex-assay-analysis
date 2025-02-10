@@ -1,45 +1,42 @@
-# TODO: Replace with the name of the repo
+# 2025-hex-assay-analysis
 
 [![run with conda](https://img.shields.io/badge/run%20with-conda-3EB049?labelColor=000000&logo=anaconda)](https://docs.conda.io/projects/miniconda/en/latest/)
 
-Note: Analysis repo names should be prefixed with the year (ie `2024-noveltree-analysis`)
-
 ## Purpose
 
-TODO: Briefly describe the core analyses performed in the repository and the motivation behind them. (And pub name, DOI)
+This repo contains analysis notebooks for the beta-hexosaminidase degranulation assay and lactate dehydrogenase (LDH) viability assay. Details about these assays and results obtained using them can be found in the Arcadia pub "Compound 48/80 is toxic in HMC1.2 and RBL-2H3 cells" at https://doi.org/10.57844/arcadia-3207-4695.
 
 ## Installation and Setup
 
 This repository uses conda to manage software environments and installations. You can find operating system-specific instructions for installing miniconda [here](https://docs.conda.io/projects/miniconda/en/latest/). After installing conda and [mamba](https://mamba.readthedocs.io/en/latest/), run the following command to create the pipeline run environment.
 
 ```{bash}
-TODO: Replace <NAME> with the name of your environment
-mamba env create -n <NAME> --file envs/dev.yml
-conda activate <NAME>
+mamba env create -n hex-assay-analysis --file envs/dev.yml
+conda activate hex-assay-analysis
 ```
 
 ## Data
 
-TODO: Add details about the description of input / output data and links to Zenodo depositions, if applicable. Where do they live, how to access, how to update notebook to analyze those as well
+Raw data analyzed by these notebooks and found in the associated publication can be found in the `data_files` folder of this repo. As written, each notebook analyzes one of these files as an example. To analyze a different raw hexosaminidase or LDH assay data file, update the `data_filename` parameter in `analysis_notebooks/hex_assay_analysis_main.ipynb` or `analysis_notebooks/ldh_assay_analysis_main.ipynb`, respectively. To analyze a different processed datafile using `analysis_notebooks/dose_response_analysis.ipynb`, update the `labeled_datafile_hex` and `labeled_datafile_ldh` parameters.
 
 ## Overview
 
-### Description of the folder structure (Check out other Arcadia repos to see how people do this)
+### Directory Structure
+
+* analysis_notebooks/: contains the analysis notebooks used to generate processed data.
+* data_files/: contains the raw data files used to produce processed data in the associated publication.
+* envs/: the conda environment used for this repo.
+* sample_manifest/: contains template and example sample manifests that can be updated as needed by users analyzing their own data.
 
 ### Methods
 
-TODO: Include a brief, step-wise overview of analyses performed.
-
-> Example:
->
-> 1.  Download scripts using `download.ipynb`.
-> 2.  Preprocess using `./preprocessing.sh -a data/`
-> 3.  Run Snakemake pipeline `snakemake --snakefile Snakefile`
-> 4.  Generate figures using `pub/make_figures.ipynb`.
+> 1. Analyze raw hexosaminidase assay data using `analysis_notebooks/hex_assay_analysis_main.ipynb`.
+> 2. Analyze raw LDH assay data using `analysis_notebooks/ldh_assay_analysis_main.ipynb`.
+> 3. Generate dose response curves using `analysis_notebooks/dose_response_analysis.ipynb`, if applicable.
 
 ### Compute Specifications
 
-TODO: Describe what compute resources were used to run the analysis. For example, you could list the operating system, number of cores, RAM, and storage space.
+These analyses were performed on a 2023 MacBook Pro with Apple M3 Max Chip and 36 GB of RAM. Given the simplicity of these analyses, we do not expect users to experience difficulty due to insufficient compute.
 
 ## Contributing
 
