@@ -1,7 +1,7 @@
 ﻿Manifest,1,2,3,4,5,6,7,8,9,10,11,12
-A,48/80 66.67 µg/mL,5-HT 3µM,SLIGRL 300 µM,HA 30µM,Cq 300 µM,ß-ala 100 µM,PAMP12 150µM,Subs. P 10µM,PBS,,,
-B,48/80 66.67 µg/mL,5-HT 3µM,SLIGRL 300 µM,HA 30µM,Cq 300 µM,ß-ala 100 µM,PAMP12 150µM,Subs. P 10µM,PBS,,,
-C,48/80 66.67 µg/mL,5-HT 3µM,SLIGRL 300 µM,HA 30µM,Cq 300 µM,ß-ala 100 µM,PAMP12 150µM,Subs. P 10µM,PBS,,,
+A,48/80 ,5-HT ,SLIGRL ,HA ,Cq ,ß-ala ,PAMP12 ,Subs. P ,PBS,,,
+B,48/80 ,5-HT ,SLIGRL ,HA ,Cq ,ß-ala ,PAMP12 ,Subs. P ,PBS,,,
+C,48/80 ,5-HT ,SLIGRL ,HA ,Cq ,ß-ala ,PAMP12 ,Subs. P ,PBS,,,
 D,500,250,125,0,Blank,,,,,,,
 E,500,250,125,0,Blank,,,,,,,
 F,500,250,125,0,Blank,,,,,,,
