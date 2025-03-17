@@ -32,7 +32,8 @@ Raw data analyzed by these notebooks and found in the associated publication can
 
 > 1. Analyze raw hexosaminidase assay data using [analysis_notebooks/hex_assay_analysis_main.ipynb](./analysis_notebooks/hex_assay_analysis_main.ipynb).
 > 2. Analyze raw LDH assay data using [analysis_notebooks/ldh_assay_analysis_main.ipynb](./analysis_notebooks/ldh_assay_analysis_main.ipynb).
-> 3. Generate dose response curves using [analysis_notebooks/dose_response_analysis.ipynb](./analysis_notebooks/dose_response_analysis.ipynb) or compare degranulation and toxicity induced by a panel of pruritogens using [analysis_notebooks/pruritogen_panel_superimpose.ipynb](./analysis_notebooks/pruritogen_panel_superimpose.ipynb), if applicable.
+> 3. If the experiment is a dose-response experiment, generate dose-response curves using [analysis_notebooks/dose_response_analysis.ipynb](./analysis_notebooks/dose_response_analysis.ipynb).
+> 4. If the experiment tests a panel of different activators, compare induction of degranulation and toxicity by different activators using [analysis_notebooks/pruritogen_panel_superimpose.ipynb](./analysis_notebooks/pruritogen_panel_superimpose.ipynb), if applicable.
 
 ### Compute Specifications
 
