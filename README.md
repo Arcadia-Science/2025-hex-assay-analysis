@@ -17,7 +17,7 @@ conda activate hex-assay-analysis
 
 ## Data
 
-Raw data analyzed by these notebooks and found in the associated publication can be found in the [data_files/](./data_files/) folder of this repo. As written, each notebook analyzes one of these files as an example. To analyze a different raw hexosaminidase or LDH assay data file, update the `data_filename` parameter in [analysis_notebooks/hex_assay_analysis_main.ipynb](./analysis_notebooks/hex_assay_analysis_main.ipynb) or [analysis_notebooks/ldh_assay_analysis_main.ipynb](./analysis_notebooks/ldh_assay_analysis_main.ipynb), respectively. To analyze a different processed datafile using [analysis_notebooks/dose_response_analysis.ipynb](./analysis_notebook/dose_response_analysis.ipynb), update the `labeled_datafile_hex` and `labeled_datafile_ldh` parameters.
+Raw data analyzed by these notebooks and found in the associated publication can be found in the [data_files/](./data_files/) folder of this repo. As written, each notebook analyzes one of these files as an example. To analyze a different raw hexosaminidase or LDH assay data file, update the `data_filename` parameter in [analysis_notebooks/hex_assay_analysis_main.ipynb](./analysis_notebooks/hex_assay_analysis_main.ipynb) or [analysis_notebooks/ldh_assay_analysis_main.ipynb](./analysis_notebooks/ldh_assay_analysis_main.ipynb), respectively. To analyze a different processed datafile using [analysis_notebooks/dose_response_analysis.ipynb](./analysis_notebook/dose_response_analysis.ipynb), update the `labeled_datafile_hex` and `labeled_datafile_ldh` parameters. To analyze a different set of processed datafiles using [analysis_notebooks/pruritogen_panel_superimpose.ipynb](./analysis_notebook/pruritogen_panel_superimpose.ipynb), update the parameters `hmc_hex_data_filename`, `rbl_hex_data_filename`, `hmc_ldh_data_filename`, and `rbl_ldh_data_filename`.
 
 ## Overview
 
@@ -32,7 +32,8 @@ Raw data analyzed by these notebooks and found in the associated publication can
 
 > 1. Analyze raw hexosaminidase assay data using [analysis_notebooks/hex_assay_analysis_main.ipynb](./analysis_notebooks/hex_assay_analysis_main.ipynb).
 > 2. Analyze raw LDH assay data using [analysis_notebooks/ldh_assay_analysis_main.ipynb](./analysis_notebooks/ldh_assay_analysis_main.ipynb).
-> 3. Generate dose response curves using [analysis_notebooks/dose_response_analysis.ipynb](./analysis_notebooks/dose_response_analysis.ipynb), if applicable.
+> 3. If the experiment is a dose-response experiment, generate dose-response curves using [analysis_notebooks/dose_response_analysis.ipynb](./analysis_notebooks/dose_response_analysis.ipynb).
+> 4. If the experiment tests a panel of different activators, compare induction of degranulation and toxicity by different activators using [analysis_notebooks/pruritogen_panel_superimpose.ipynb](./analysis_notebooks/pruritogen_panel_superimpose.ipynb), if applicable.
 
 ### Compute Specifications
 

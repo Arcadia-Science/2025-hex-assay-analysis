@@ -14,6 +14,7 @@ dependencies:
   - pandas=2.2.2
   - scipy=1.14.0
   - scikit-learn=1.6.0
+  - seaborn=0.13.2
   - statsmodels=0.14.2
   - pip:
       - arcadia_pycolor==0.5.1
